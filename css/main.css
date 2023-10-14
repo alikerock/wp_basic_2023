@@ -495,11 +495,11 @@ sub {
 img {
 	max-width: 100%;	
 }
-#content img {
+/* #content img {
 	margin: 0;
 	height: auto;
 	width: auto;
-}
+} */
 #content .alignleft,
 #content img.alignleft {
 	float: left;
