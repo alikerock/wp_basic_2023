@@ -13,3 +13,13 @@ if(!function_exists('alikerock_script')){
 
   add_action( 'wp_enqueue_scripts', 'alikerock_script' );
 }
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' ),
+      'extra-menu' => __( 'Extra Menu' )
+     )
+   );
+ }
+ add_action( 'init', 'register_my_menus' );
