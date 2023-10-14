@@ -3,21 +3,9 @@
 ?>
 
 <div id="content" class="two-thirds">
-
- <!-- Start the Loop. -->
- <ul>
- <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-  <li>
-    <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-  </li>
- <?php endwhile; else : ?>
- </ul>
-
-  <!-- REALLY stop The Loop. -->
-  <p>조회할 글이 없습니다.</p>
-
- <?php endif; ?>
-
+  <h2>Single Template</h2>
+  <h3><?php the_title(); ?></h3>
+  <?php the_content(); ?>
 </div><!-- #content-->
 
 <!-- the sidebar - in WordPress this will be populated with widgets -->
