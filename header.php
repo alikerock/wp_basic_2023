@@ -51,7 +51,7 @@
         'menu_class' => 'main-menu'
       )); 
     ?>
-
+  <?php get_search_form() ?>
 	</nav><!-- .main -->
 
 	<div class="main">
